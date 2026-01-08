@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QA Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+    <h1 data-testid="title">QA Portfolio</h1>
+    <nav class="nav">
+      <a href="./index.html" data-testid="nav-home">Home</a>
+      <a href="./projects.html" data-testid="nav-projects">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-left">
+        <img src="./assets/image.png" alt="Get to know me" class="hero-image" />
+      </div>
+
+      <div class="hero-right">
+        <h2 class="hero-title">Hi, I’m Nathalie 👾</h2>
+        <p class="hero-subtitle">I’m a Quality Assurance Analyst with experience in software testing and quality assurance.</p>
+
+        <p class="hero-subtitle">I work mainly with manual and exploratory testing, creating test scenarios and validating system behavior. I also have experience testing APIs using tools like Postman and Insomnia.</p>
+
+        <p class="hero-subtitle">I am learning and supporting test automation using Robot Framework and Cypress, and I have basic knowledge of JavaScript to better understand automation flows.</p>
+
+        <p class="hero-subtitle">I’m continuously improving my skills in QA, automation, and modern testing practices, always focused on quality, collaboration, and learning.</p>
+
+        <div class="chips" data-testid="about-chips">
+          <span class="chip">QA</span>
+          <span class="chip">Cypress</span>
+          <span class="chip">Robot Framework</span>
+          <span class="chip">API Testing</span>
+          <span class="chip">JavaScript (basic)</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-header">
+        <h2 class="contact-title">Let’s connect</h2>
+            <p class="contact-subtitle">
+                Feel free to reach out through the cards below.
+            </p>
+    </div>
+
+    <section class="window-grid" data-testid="contact-ovals" aria-label="Contact cards">
+
+      <a class="window-card window--pink" href="https://wa.me/5511983787783?text=Hi%20Nathalie!%20I%20saw%20your%20QA%20portfolio%20and%20would%20like%20to%20talk%20with%20you." target="_blank" rel="noopener" data-testid="contact-whatsapp">
+        <div class="window-top">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <h3 class="window-title">WhatsApp</h3>
+      </a>
+
+        <div class="window-card window--blue copy-email"
+            data-email="nathaliegiuliani28@gmail.com"
+            role="button"
+            tabindex="0">
+        <div class="window-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <h3 class="window-title">Email</h3>
+        <span class="copy-hint">Click to copy</span>
+        </div>
+
+
+      <a class="window-card window--pink" href="https://www.linkedin.com/in/nathalie--giuliani/" target="_blank" rel="noopener" data-testid="contact-linkedin">
+        <div class="window-top">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <h3 class="window-title">LinkedIn</h3>
+      </a>
+
+      <a class="window-card window--blue" href="https://github.com/nansfromspace" target="_blank" rel="noopener" data-testid="contact-github">
+        <div class="window-top">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <h3 class="window-title">GitHub</h3>
+      </a>
+
+    </section>
+
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
